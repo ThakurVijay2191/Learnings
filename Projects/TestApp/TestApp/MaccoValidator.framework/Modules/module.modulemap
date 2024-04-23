@@ -1,0 +1,11 @@
+framework module MaccoValidator {
+  umbrella header "MaccoValidator.h"
+  export *
+
+  module * { export * }
+}
+
+module MaccoValidator.Swift {
+  header "MaccoValidator-Swift.h"
+  requires objc
+}

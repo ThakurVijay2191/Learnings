@@ -1,0 +1,35 @@
+<?xml version="1.0" encoding="UTF-8" standalone="yes"?>
+<model type="com.apple.IDECoreDataModeler.DataModel" documentVersion="1.0" lastSavedToolsVersion="14490.99" systemVersion="18F132" minimumToolsVersion="Automatic" sourceLanguage="Swift" userDefinedModelVersionIdentifier="">
+    <entity name="Card" representedClassName=".Card" syncable="YES">
+        <attribute name="image" optional="YES" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" optional="YES" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="Category" representedClassName=".Category" syncable="YES">
+        <attribute name="image" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="subCategories" toMany="YES" deletionRule="Nullify" destinationEntity="SubCategory" inverseName="belongTo" inverseEntity="SubCategory" syncable="YES"/>
+    </entity>
+    <entity name="Item" representedClassName=".Item" syncable="YES">
+        <attribute name="dispalyName" optional="YES" attributeType="String" syncable="YES"/>
+        <attribute name="image" attributeType="Binary" syncable="YES"/>
+        <attribute name="isUserInitiated" attributeType="Boolean" defaultValueString="NO" usesScalarValueType="YES" syncable="YES"/>
+        <attribute name="uniqueName" attributeType="String" syncable="YES"/>
+        <relationship name="belongTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="SubCategory" inverseName="items" inverseEntity="SubCategory" syncable="YES"/>
+    </entity>
+    <entity name="RoomItem" representedClassName=".RoomItem" syncable="YES">
+        <attribute name="image" attributeType="Binary" syncable="YES"/>
+        <attribute name="name" attributeType="String" syncable="YES"/>
+    </entity>
+    <entity name="SubCategory" representedClassName=".SubCategory" syncable="YES">
+        <attribute name="name" attributeType="String" syncable="YES"/>
+        <relationship name="belongTo" optional="YES" maxCount="1" deletionRule="Nullify" destinationEntity="Category" inverseName="subCategories" inverseEntity="Category" syncable="YES"/>
+        <relationship name="items" toMany="YES" deletionRule="Nullify" destinationEntity="Item" inverseName="belongTo" inverseEntity="Item" syncable="YES"/>
+    </entity>
+    <elements>
+        <element name="Card" positionX="-411.50390625" positionY="-592.96875" width="128" height="73"/>
+        <element name="Category" positionX="-203.77734375" positionY="-597.11328125" width="128" height="90"/>
+        <element name="Item" positionX="-210.1484375" positionY="-310.78125" width="128" height="120"/>
+        <element name="RoomItem" positionX="-408.63671875" positionY="-478.6015625" width="128" height="73"/>
+        <element name="SubCategory" positionX="-202.921875" positionY="-451.078125" width="128" height="90"/>
+    </elements>
+</model>

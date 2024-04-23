@@ -1,0 +1,21 @@
+{
+  "images" : [
+    {
+      "filename" : "green-field-tree-blue-skygreat-as-backgroundweb-banner-generative-ai_1258-153069.png",
+      "idiom" : "universal",
+      "scale" : "1x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "2x"
+    },
+    {
+      "idiom" : "universal",
+      "scale" : "3x"
+    }
+  ],
+  "info" : {
+    "author" : "xcode",
+    "version" : 1
+  }
+}

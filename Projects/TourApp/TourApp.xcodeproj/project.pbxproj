@@ -1,0 +1,619 @@
+// !$*UTF8*$!
+{
+	archiveVersion = 1;
+	classes = {
+	};
+	objectVersion = 56;
+	objects = {
+
+/* Begin PBXBuildFile section */
+		9D578D40CCF45FEE7E37096C /* Pods_TourApp.framework in Frameworks */ = {isa = PBXBuildFile; fileRef = 51D75F2AB313A39517C8E955 /* Pods_TourApp.framework */; };
+		EA6A04692BD1621F00B10176 /* TourAppApp.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04682BD1621F00B10176 /* TourAppApp.swift */; };
+		EA6A046B2BD1621F00B10176 /* ContentView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A046A2BD1621F00B10176 /* ContentView.swift */; };
+		EA6A046D2BD1622000B10176 /* Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6A046C2BD1622000B10176 /* Assets.xcassets */; };
+		EA6A04702BD1622100B10176 /* Preview Assets.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6A046F2BD1622100B10176 /* Preview Assets.xcassets */; };
+		EA6A04782BD1623000B10176 /* AuthenticationView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04772BD1623000B10176 /* AuthenticationView.swift */; };
+		EA6A047B2BD162E600B10176 /* View.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A047A2BD162E600B10176 /* View.swift */; };
+		EA6A047E2BD1647D00B10176 /* AuthenticationViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A047D2BD1647D00B10176 /* AuthenticationViewModel.swift */; };
+		EA6A04812BD16EB400B10176 /* KeyboardObserving.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04802BD16EB300B10176 /* KeyboardObserving.swift */; };
+		EA6A04832BD16F4000B10176 /* TextFieldCase.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04822BD16F4000B10176 /* TextFieldCase.swift */; };
+		EA6A04862BD178CA00B10176 /* CustomTextField.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04852BD178CA00B10176 /* CustomTextField.swift */; };
+		EA6A04892BD17AA400B10176 /* Lobster-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6A04882BD17AA400B10176 /* Lobster-Regular.ttf */; };
+		EA6A048F2BD17ABF00B10176 /* Montserrat-Light.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6A048A2BD17ABF00B10176 /* Montserrat-Light.ttf */; };
+		EA6A04902BD17ABF00B10176 /* Montserrat-Medium.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6A048B2BD17ABF00B10176 /* Montserrat-Medium.ttf */; };
+		EA6A04912BD17ABF00B10176 /* Montserrat-Bold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6A048C2BD17ABF00B10176 /* Montserrat-Bold.ttf */; };
+		EA6A04922BD17ABF00B10176 /* Montserrat-Regular.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6A048D2BD17ABF00B10176 /* Montserrat-Regular.ttf */; };
+		EA6A04932BD17ABF00B10176 /* Montserrat-SemiBold.ttf in Resources */ = {isa = PBXBuildFile; fileRef = EA6A048E2BD17ABF00B10176 /* Montserrat-SemiBold.ttf */; };
+		EA6A04962BD17B5700B10176 /* CustomFont.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04952BD17B5700B10176 /* CustomFont.swift */; };
+		EA6A04982BD17BE700B10176 /* Font.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04972BD17BE700B10176 /* Font.swift */; };
+		EA6A049A2BD17E0900B10176 /* ExploreView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04992BD17E0900B10176 /* ExploreView.swift */; };
+		EA6A04A02BD1818600B10176 /* Colors.xcassets in Resources */ = {isa = PBXBuildFile; fileRef = EA6A049F2BD1818600B10176 /* Colors.xcassets */; };
+		EA6A04A22BD181D800B10176 /* MainView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04A12BD181D800B10176 /* MainView.swift */; };
+		EA6A04A42BD190CD00B10176 /* CardDataModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04A32BD190CD00B10176 /* CardDataModel.swift */; };
+		EA6A04A62BD1915E00B10176 /* WebServiceManager.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04A52BD1915E00B10176 /* WebServiceManager.swift */; };
+		EA6A04A82BD1924100B10176 /* CommonMethods.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04A72BD1924100B10176 /* CommonMethods.swift */; };
+		EA6A04AA2BD1929F00B10176 /* Constants.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04A92BD1929F00B10176 /* Constants.swift */; };
+		EA6A04AC2BD192EF00B10176 /* ExploreViewModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04AB2BD192EF00B10176 /* ExploreViewModel.swift */; };
+		EA6A04AE2BD193E100B10176 /* StaticButtonStyle.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04AD2BD193E100B10176 /* StaticButtonStyle.swift */; };
+		EA6A04B02BD1941B00B10176 /* Tab.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04AF2BD1941B00B10176 /* Tab.swift */; };
+		EA6A04B22BD19D0E00B10176 /* UserModel.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04B12BD19D0E00B10176 /* UserModel.swift */; };
+		EA6A04B42BD19DBF00B10176 /* UserDefaultsMapper.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04B32BD19DBF00B10176 /* UserDefaultsMapper.swift */; };
+		EA6A04B62BD19E4B00B10176 /* String.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04B52BD19E4B00B10176 /* String.swift */; };
+		EA6A04B82BD19EFC00B10176 /* Navigation.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04B72BD19EFC00B10176 /* Navigation.swift */; };
+		EA6A04BE2BD2066600B10176 /* Loader.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04BD2BD2066600B10176 /* Loader.swift */; };
+		EA6A04C02BD2097D00B10176 /* SignupView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04BF2BD2097D00B10176 /* SignupView.swift */; };
+		EA6A04C22BD209DF00B10176 /* SocialLoginButton.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04C12BD209DF00B10176 /* SocialLoginButton.swift */; };
+		EA6A04C42BD20C3300B10176 /* ProfileView.swift in Sources */ = {isa = PBXBuildFile; fileRef = EA6A04C32BD20C3300B10176 /* ProfileView.swift */; };
+/* End PBXBuildFile section */
+
+/* Begin PBXFileReference section */
+		296D5A9A50D2DB7BF2195F9F /* Pods-TourApp.debug.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourApp.debug.xcconfig"; path = "Target Support Files/Pods-TourApp/Pods-TourApp.debug.xcconfig"; sourceTree = "<group>"; };
+		51D75F2AB313A39517C8E955 /* Pods_TourApp.framework */ = {isa = PBXFileReference; explicitFileType = wrapper.framework; includeInIndex = 0; path = Pods_TourApp.framework; sourceTree = BUILT_PRODUCTS_DIR; };
+		DC38A7DF54BE17463B27143C /* Pods-TourApp.release.xcconfig */ = {isa = PBXFileReference; includeInIndex = 1; lastKnownFileType = text.xcconfig; name = "Pods-TourApp.release.xcconfig"; path = "Target Support Files/Pods-TourApp/Pods-TourApp.release.xcconfig"; sourceTree = "<group>"; };
+		EA6A04652BD1621F00B10176 /* TourApp.app */ = {isa = PBXFileReference; explicitFileType = wrapper.application; includeInIndex = 0; path = TourApp.app; sourceTree = BUILT_PRODUCTS_DIR; };
+		EA6A04682BD1621F00B10176 /* TourAppApp.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TourAppApp.swift; sourceTree = "<group>"; };
+		EA6A046A2BD1621F00B10176 /* ContentView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ContentView.swift; sourceTree = "<group>"; };
+		EA6A046C2BD1622000B10176 /* Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Assets.xcassets; sourceTree = "<group>"; };
+		EA6A046F2BD1622100B10176 /* Preview Assets.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = "Preview Assets.xcassets"; sourceTree = "<group>"; };
+		EA6A04772BD1623000B10176 /* AuthenticationView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationView.swift; sourceTree = "<group>"; };
+		EA6A047A2BD162E600B10176 /* View.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = View.swift; sourceTree = "<group>"; };
+		EA6A047D2BD1647D00B10176 /* AuthenticationViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = AuthenticationViewModel.swift; sourceTree = "<group>"; };
+		EA6A04802BD16EB300B10176 /* KeyboardObserving.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = KeyboardObserving.swift; sourceTree = "<group>"; };
+		EA6A04822BD16F4000B10176 /* TextFieldCase.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = TextFieldCase.swift; sourceTree = "<group>"; };
+		EA6A04852BD178CA00B10176 /* CustomTextField.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomTextField.swift; sourceTree = "<group>"; };
+		EA6A04882BD17AA400B10176 /* Lobster-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Lobster-Regular.ttf"; sourceTree = "<group>"; };
+		EA6A048A2BD17ABF00B10176 /* Montserrat-Light.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Light.ttf"; sourceTree = "<group>"; };
+		EA6A048B2BD17ABF00B10176 /* Montserrat-Medium.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Medium.ttf"; sourceTree = "<group>"; };
+		EA6A048C2BD17ABF00B10176 /* Montserrat-Bold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Bold.ttf"; sourceTree = "<group>"; };
+		EA6A048D2BD17ABF00B10176 /* Montserrat-Regular.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-Regular.ttf"; sourceTree = "<group>"; };
+		EA6A048E2BD17ABF00B10176 /* Montserrat-SemiBold.ttf */ = {isa = PBXFileReference; lastKnownFileType = file; path = "Montserrat-SemiBold.ttf"; sourceTree = "<group>"; };
+		EA6A04942BD17AD300B10176 /* Info.plist */ = {isa = PBXFileReference; lastKnownFileType = text.plist; path = Info.plist; sourceTree = "<group>"; };
+		EA6A04952BD17B5700B10176 /* CustomFont.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CustomFont.swift; sourceTree = "<group>"; };
+		EA6A04972BD17BE700B10176 /* Font.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Font.swift; sourceTree = "<group>"; };
+		EA6A04992BD17E0900B10176 /* ExploreView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreView.swift; sourceTree = "<group>"; };
+		EA6A049F2BD1818600B10176 /* Colors.xcassets */ = {isa = PBXFileReference; lastKnownFileType = folder.assetcatalog; path = Colors.xcassets; sourceTree = "<group>"; };
+		EA6A04A12BD181D800B10176 /* MainView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = MainView.swift; sourceTree = "<group>"; };
+		EA6A04A32BD190CD00B10176 /* CardDataModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CardDataModel.swift; sourceTree = "<group>"; };
+		EA6A04A52BD1915E00B10176 /* WebServiceManager.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = WebServiceManager.swift; sourceTree = "<group>"; };
+		EA6A04A72BD1924100B10176 /* CommonMethods.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = CommonMethods.swift; sourceTree = "<group>"; };
+		EA6A04A92BD1929F00B10176 /* Constants.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Constants.swift; sourceTree = "<group>"; };
+		EA6A04AB2BD192EF00B10176 /* ExploreViewModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ExploreViewModel.swift; sourceTree = "<group>"; };
+		EA6A04AD2BD193E100B10176 /* StaticButtonStyle.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = StaticButtonStyle.swift; sourceTree = "<group>"; };
+		EA6A04AF2BD1941B00B10176 /* Tab.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Tab.swift; sourceTree = "<group>"; };
+		EA6A04B12BD19D0E00B10176 /* UserModel.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = UserModel.swift; sourceTree = "<group>"; };
+		EA6A04B32BD19DBF00B10176 /* UserDefaultsMapper.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = UserDefaultsMapper.swift; sourceTree = "<group>"; };
+		EA6A04B52BD19E4B00B10176 /* String.swift */ = {isa = PBXFileReference; fileEncoding = 4; lastKnownFileType = sourcecode.swift; path = String.swift; sourceTree = "<group>"; };
+		EA6A04B72BD19EFC00B10176 /* Navigation.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Navigation.swift; sourceTree = "<group>"; };
+		EA6A04BD2BD2066600B10176 /* Loader.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = Loader.swift; sourceTree = "<group>"; };
+		EA6A04BF2BD2097D00B10176 /* SignupView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SignupView.swift; sourceTree = "<group>"; };
+		EA6A04C12BD209DF00B10176 /* SocialLoginButton.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = SocialLoginButton.swift; sourceTree = "<group>"; };
+		EA6A04C32BD20C3300B10176 /* ProfileView.swift */ = {isa = PBXFileReference; lastKnownFileType = sourcecode.swift; path = ProfileView.swift; sourceTree = "<group>"; };
+/* End PBXFileReference section */
+
+/* Begin PBXFrameworksBuildPhase section */
+		EA6A04622BD1621F00B10176 /* Frameworks */ = {
+			isa = PBXFrameworksBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				9D578D40CCF45FEE7E37096C /* Pods_TourApp.framework in Frameworks */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXFrameworksBuildPhase section */
+
+/* Begin PBXGroup section */
+		27985CBD8A455B49C23A2A2E /* Frameworks */ = {
+			isa = PBXGroup;
+			children = (
+				51D75F2AB313A39517C8E955 /* Pods_TourApp.framework */,
+			);
+			name = Frameworks;
+			sourceTree = "<group>";
+		};
+		2FB81B2D0AD559D559A309E2 /* Pods */ = {
+			isa = PBXGroup;
+			children = (
+				296D5A9A50D2DB7BF2195F9F /* Pods-TourApp.debug.xcconfig */,
+				DC38A7DF54BE17463B27143C /* Pods-TourApp.release.xcconfig */,
+			);
+			path = Pods;
+			sourceTree = "<group>";
+		};
+		EA6A045C2BD1621F00B10176 = {
+			isa = PBXGroup;
+			children = (
+				EA6A04672BD1621F00B10176 /* TourApp */,
+				EA6A04662BD1621F00B10176 /* Products */,
+				2FB81B2D0AD559D559A309E2 /* Pods */,
+				27985CBD8A455B49C23A2A2E /* Frameworks */,
+			);
+			sourceTree = "<group>";
+		};
+		EA6A04662BD1621F00B10176 /* Products */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04652BD1621F00B10176 /* TourApp.app */,
+			);
+			name = Products;
+			sourceTree = "<group>";
+		};
+		EA6A04672BD1621F00B10176 /* TourApp */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04942BD17AD300B10176 /* Info.plist */,
+				EA6A04872BD17A7600B10176 /* CustomFonts */,
+				EA6A04842BD178C100B10176 /* Components */,
+				EA6A047F2BD16E9500B10176 /* Utils */,
+				EA6A04792BD162E000B10176 /* Extensions */,
+				EA6A049B2BD17E2800B10176 /* Model */,
+				EA6A047C2BD1647200B10176 /* ViewModel */,
+				EA6A04762BD1622900B10176 /* View */,
+				EA6A049E2BD1817300B10176 /* Resources */,
+				EA6A04682BD1621F00B10176 /* TourAppApp.swift */,
+				EA6A046A2BD1621F00B10176 /* ContentView.swift */,
+				EA6A046E2BD1622100B10176 /* Preview Content */,
+			);
+			path = TourApp;
+			sourceTree = "<group>";
+		};
+		EA6A046E2BD1622100B10176 /* Preview Content */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A046F2BD1622100B10176 /* Preview Assets.xcassets */,
+			);
+			path = "Preview Content";
+			sourceTree = "<group>";
+		};
+		EA6A04762BD1622900B10176 /* View */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04772BD1623000B10176 /* AuthenticationView.swift */,
+				EA6A04992BD17E0900B10176 /* ExploreView.swift */,
+				EA6A04A12BD181D800B10176 /* MainView.swift */,
+				EA6A04BF2BD2097D00B10176 /* SignupView.swift */,
+				EA6A04C32BD20C3300B10176 /* ProfileView.swift */,
+			);
+			path = View;
+			sourceTree = "<group>";
+		};
+		EA6A04792BD162E000B10176 /* Extensions */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A047A2BD162E600B10176 /* View.swift */,
+				EA6A04972BD17BE700B10176 /* Font.swift */,
+				EA6A04B52BD19E4B00B10176 /* String.swift */,
+			);
+			path = Extensions;
+			sourceTree = "<group>";
+		};
+		EA6A047C2BD1647200B10176 /* ViewModel */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A047D2BD1647D00B10176 /* AuthenticationViewModel.swift */,
+				EA6A04AB2BD192EF00B10176 /* ExploreViewModel.swift */,
+			);
+			path = ViewModel;
+			sourceTree = "<group>";
+		};
+		EA6A047F2BD16E9500B10176 /* Utils */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04802BD16EB300B10176 /* KeyboardObserving.swift */,
+				EA6A04822BD16F4000B10176 /* TextFieldCase.swift */,
+				EA6A04952BD17B5700B10176 /* CustomFont.swift */,
+				EA6A04A52BD1915E00B10176 /* WebServiceManager.swift */,
+				EA6A04A72BD1924100B10176 /* CommonMethods.swift */,
+				EA6A04A92BD1929F00B10176 /* Constants.swift */,
+				EA6A04AD2BD193E100B10176 /* StaticButtonStyle.swift */,
+				EA6A04AF2BD1941B00B10176 /* Tab.swift */,
+				EA6A04B32BD19DBF00B10176 /* UserDefaultsMapper.swift */,
+				EA6A04B72BD19EFC00B10176 /* Navigation.swift */,
+				EA6A04BD2BD2066600B10176 /* Loader.swift */,
+			);
+			path = Utils;
+			sourceTree = "<group>";
+		};
+		EA6A04842BD178C100B10176 /* Components */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04852BD178CA00B10176 /* CustomTextField.swift */,
+				EA6A04C12BD209DF00B10176 /* SocialLoginButton.swift */,
+			);
+			path = Components;
+			sourceTree = "<group>";
+		};
+		EA6A04872BD17A7600B10176 /* CustomFonts */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04882BD17AA400B10176 /* Lobster-Regular.ttf */,
+				EA6A048C2BD17ABF00B10176 /* Montserrat-Bold.ttf */,
+				EA6A048A2BD17ABF00B10176 /* Montserrat-Light.ttf */,
+				EA6A048B2BD17ABF00B10176 /* Montserrat-Medium.ttf */,
+				EA6A048D2BD17ABF00B10176 /* Montserrat-Regular.ttf */,
+				EA6A048E2BD17ABF00B10176 /* Montserrat-SemiBold.ttf */,
+			);
+			path = CustomFonts;
+			sourceTree = "<group>";
+		};
+		EA6A049B2BD17E2800B10176 /* Model */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A04A32BD190CD00B10176 /* CardDataModel.swift */,
+				EA6A04B12BD19D0E00B10176 /* UserModel.swift */,
+			);
+			path = Model;
+			sourceTree = "<group>";
+		};
+		EA6A049E2BD1817300B10176 /* Resources */ = {
+			isa = PBXGroup;
+			children = (
+				EA6A046C2BD1622000B10176 /* Assets.xcassets */,
+				EA6A049F2BD1818600B10176 /* Colors.xcassets */,
+			);
+			path = Resources;
+			sourceTree = "<group>";
+		};
+/* End PBXGroup section */
+
+/* Begin PBXNativeTarget section */
+		EA6A04642BD1621F00B10176 /* TourApp */ = {
+			isa = PBXNativeTarget;
+			buildConfigurationList = EA6A04732BD1622100B10176 /* Build configuration list for PBXNativeTarget "TourApp" */;
+			buildPhases = (
+				5AE792841256062A6F58B5F5 /* [CP] Check Pods Manifest.lock */,
+				EA6A04612BD1621F00B10176 /* Sources */,
+				EA6A04622BD1621F00B10176 /* Frameworks */,
+				EA6A04632BD1621F00B10176 /* Resources */,
+				AD576E2F0211FE02B54E9F63 /* [CP] Embed Pods Frameworks */,
+			);
+			buildRules = (
+			);
+			dependencies = (
+			);
+			name = TourApp;
+			productName = TourApp;
+			productReference = EA6A04652BD1621F00B10176 /* TourApp.app */;
+			productType = "com.apple.product-type.application";
+		};
+/* End PBXNativeTarget section */
+
+/* Begin PBXProject section */
+		EA6A045D2BD1621F00B10176 /* Project object */ = {
+			isa = PBXProject;
+			attributes = {
+				BuildIndependentTargetsInParallel = 1;
+				LastSwiftUpdateCheck = 1500;
+				LastUpgradeCheck = 1500;
+				TargetAttributes = {
+					EA6A04642BD1621F00B10176 = {
+						CreatedOnToolsVersion = 15.0.1;
+					};
+				};
+			};
+			buildConfigurationList = EA6A04602BD1621F00B10176 /* Build configuration list for PBXProject "TourApp" */;
+			compatibilityVersion = "Xcode 14.0";
+			developmentRegion = en;
+			hasScannedForEncodings = 0;
+			knownRegions = (
+				en,
+				Base,
+			);
+			mainGroup = EA6A045C2BD1621F00B10176;
+			productRefGroup = EA6A04662BD1621F00B10176 /* Products */;
+			projectDirPath = "";
+			projectRoot = "";
+			targets = (
+				EA6A04642BD1621F00B10176 /* TourApp */,
+			);
+		};
+/* End PBXProject section */
+
+/* Begin PBXResourcesBuildPhase section */
+		EA6A04632BD1621F00B10176 /* Resources */ = {
+			isa = PBXResourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6A04A02BD1818600B10176 /* Colors.xcassets in Resources */,
+				EA6A048F2BD17ABF00B10176 /* Montserrat-Light.ttf in Resources */,
+				EA6A04902BD17ABF00B10176 /* Montserrat-Medium.ttf in Resources */,
+				EA6A04922BD17ABF00B10176 /* Montserrat-Regular.ttf in Resources */,
+				EA6A04912BD17ABF00B10176 /* Montserrat-Bold.ttf in Resources */,
+				EA6A04702BD1622100B10176 /* Preview Assets.xcassets in Resources */,
+				EA6A04892BD17AA400B10176 /* Lobster-Regular.ttf in Resources */,
+				EA6A04932BD17ABF00B10176 /* Montserrat-SemiBold.ttf in Resources */,
+				EA6A046D2BD1622000B10176 /* Assets.xcassets in Resources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXResourcesBuildPhase section */
+
+/* Begin PBXShellScriptBuildPhase section */
+		5AE792841256062A6F58B5F5 /* [CP] Check Pods Manifest.lock */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+			);
+			inputPaths = (
+				"${PODS_PODFILE_DIR_PATH}/Podfile.lock",
+				"${PODS_ROOT}/Manifest.lock",
+			);
+			name = "[CP] Check Pods Manifest.lock";
+			outputFileListPaths = (
+			);
+			outputPaths = (
+				"$(DERIVED_FILE_DIR)/Pods-TourApp-checkManifestLockResult.txt",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "diff \"${PODS_PODFILE_DIR_PATH}/Podfile.lock\" \"${PODS_ROOT}/Manifest.lock\" > /dev/null\nif [ $? != 0 ] ; then\n    # print error to STDERR\n    echo \"error: The sandbox is not in sync with the Podfile.lock. Run 'pod install' or update your CocoaPods installation.\" >&2\n    exit 1\nfi\n# This output is used by Xcode 'outputs' to avoid re-running this script phase.\necho \"SUCCESS\" > \"${SCRIPT_OUTPUT_FILE_0}\"\n";
+			showEnvVarsInLog = 0;
+		};
+		AD576E2F0211FE02B54E9F63 /* [CP] Embed Pods Frameworks */ = {
+			isa = PBXShellScriptBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+			);
+			inputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TourApp/Pods-TourApp-frameworks-${CONFIGURATION}-input-files.xcfilelist",
+			);
+			name = "[CP] Embed Pods Frameworks";
+			outputFileListPaths = (
+				"${PODS_ROOT}/Target Support Files/Pods-TourApp/Pods-TourApp-frameworks-${CONFIGURATION}-output-files.xcfilelist",
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+			shellPath = /bin/sh;
+			shellScript = "\"${PODS_ROOT}/Target Support Files/Pods-TourApp/Pods-TourApp-frameworks.sh\"\n";
+			showEnvVarsInLog = 0;
+		};
+/* End PBXShellScriptBuildPhase section */
+
+/* Begin PBXSourcesBuildPhase section */
+		EA6A04612BD1621F00B10176 /* Sources */ = {
+			isa = PBXSourcesBuildPhase;
+			buildActionMask = 2147483647;
+			files = (
+				EA6A04962BD17B5700B10176 /* CustomFont.swift in Sources */,
+				EA6A04C42BD20C3300B10176 /* ProfileView.swift in Sources */,
+				EA6A04B22BD19D0E00B10176 /* UserModel.swift in Sources */,
+				EA6A04B62BD19E4B00B10176 /* String.swift in Sources */,
+				EA6A04B82BD19EFC00B10176 /* Navigation.swift in Sources */,
+				EA6A04AA2BD1929F00B10176 /* Constants.swift in Sources */,
+				EA6A04B42BD19DBF00B10176 /* UserDefaultsMapper.swift in Sources */,
+				EA6A04A22BD181D800B10176 /* MainView.swift in Sources */,
+				EA6A04C22BD209DF00B10176 /* SocialLoginButton.swift in Sources */,
+				EA6A047B2BD162E600B10176 /* View.swift in Sources */,
+				EA6A04A42BD190CD00B10176 /* CardDataModel.swift in Sources */,
+				EA6A04982BD17BE700B10176 /* Font.swift in Sources */,
+				EA6A04AE2BD193E100B10176 /* StaticButtonStyle.swift in Sources */,
+				EA6A04B02BD1941B00B10176 /* Tab.swift in Sources */,
+				EA6A04AC2BD192EF00B10176 /* ExploreViewModel.swift in Sources */,
+				EA6A04A62BD1915E00B10176 /* WebServiceManager.swift in Sources */,
+				EA6A04832BD16F4000B10176 /* TextFieldCase.swift in Sources */,
+				EA6A04782BD1623000B10176 /* AuthenticationView.swift in Sources */,
+				EA6A049A2BD17E0900B10176 /* ExploreView.swift in Sources */,
+				EA6A04812BD16EB400B10176 /* KeyboardObserving.swift in Sources */,
+				EA6A04BE2BD2066600B10176 /* Loader.swift in Sources */,
+				EA6A04A82BD1924100B10176 /* CommonMethods.swift in Sources */,
+				EA6A04862BD178CA00B10176 /* CustomTextField.swift in Sources */,
+				EA6A046B2BD1621F00B10176 /* ContentView.swift in Sources */,
+				EA6A047E2BD1647D00B10176 /* AuthenticationViewModel.swift in Sources */,
+				EA6A04C02BD2097D00B10176 /* SignupView.swift in Sources */,
+				EA6A04692BD1621F00B10176 /* TourAppApp.swift in Sources */,
+			);
+			runOnlyForDeploymentPostprocessing = 0;
+		};
+/* End PBXSourcesBuildPhase section */
+
+/* Begin XCBuildConfiguration section */
+		EA6A04712BD1622100B10176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = dwarf;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_TESTABILITY = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_DYNAMIC_NO_PIC = NO;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_OPTIMIZATION_LEVEL = 0;
+				GCC_PREPROCESSOR_DEFINITIONS = (
+					"DEBUG=1",
+					"$(inherited)",
+				);
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = INCLUDE_SOURCE;
+				MTL_FAST_MATH = YES;
+				ONLY_ACTIVE_ARCH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_ACTIVE_COMPILATION_CONDITIONS = "DEBUG $(inherited)";
+				SWIFT_OPTIMIZATION_LEVEL = "-Onone";
+			};
+			name = Debug;
+		};
+		EA6A04722BD1622100B10176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			buildSettings = {
+				ALWAYS_SEARCH_USER_PATHS = NO;
+				ASSETCATALOG_COMPILER_GENERATE_SWIFT_ASSET_SYMBOL_EXTENSIONS = YES;
+				CLANG_ANALYZER_NONNULL = YES;
+				CLANG_ANALYZER_NUMBER_OBJECT_CONVERSION = YES_AGGRESSIVE;
+				CLANG_CXX_LANGUAGE_STANDARD = "gnu++20";
+				CLANG_ENABLE_MODULES = YES;
+				CLANG_ENABLE_OBJC_ARC = YES;
+				CLANG_ENABLE_OBJC_WEAK = YES;
+				CLANG_WARN_BLOCK_CAPTURE_AUTORELEASING = YES;
+				CLANG_WARN_BOOL_CONVERSION = YES;
+				CLANG_WARN_COMMA = YES;
+				CLANG_WARN_CONSTANT_CONVERSION = YES;
+				CLANG_WARN_DEPRECATED_OBJC_IMPLEMENTATIONS = YES;
+				CLANG_WARN_DIRECT_OBJC_ISA_USAGE = YES_ERROR;
+				CLANG_WARN_DOCUMENTATION_COMMENTS = YES;
+				CLANG_WARN_EMPTY_BODY = YES;
+				CLANG_WARN_ENUM_CONVERSION = YES;
+				CLANG_WARN_INFINITE_RECURSION = YES;
+				CLANG_WARN_INT_CONVERSION = YES;
+				CLANG_WARN_NON_LITERAL_NULL_CONVERSION = YES;
+				CLANG_WARN_OBJC_IMPLICIT_RETAIN_SELF = YES;
+				CLANG_WARN_OBJC_LITERAL_CONVERSION = YES;
+				CLANG_WARN_OBJC_ROOT_CLASS = YES_ERROR;
+				CLANG_WARN_QUOTED_INCLUDE_IN_FRAMEWORK_HEADER = YES;
+				CLANG_WARN_RANGE_LOOP_ANALYSIS = YES;
+				CLANG_WARN_STRICT_PROTOTYPES = YES;
+				CLANG_WARN_SUSPICIOUS_MOVE = YES;
+				CLANG_WARN_UNGUARDED_AVAILABILITY = YES_AGGRESSIVE;
+				CLANG_WARN_UNREACHABLE_CODE = YES;
+				CLANG_WARN__DUPLICATE_METHOD_MATCH = YES;
+				COPY_PHASE_STRIP = NO;
+				DEBUG_INFORMATION_FORMAT = "dwarf-with-dsym";
+				ENABLE_NS_ASSERTIONS = NO;
+				ENABLE_STRICT_OBJC_MSGSEND = YES;
+				ENABLE_USER_SCRIPT_SANDBOXING = NO;
+				GCC_C_LANGUAGE_STANDARD = gnu17;
+				GCC_NO_COMMON_BLOCKS = YES;
+				GCC_WARN_64_TO_32_BIT_CONVERSION = YES;
+				GCC_WARN_ABOUT_RETURN_TYPE = YES_ERROR;
+				GCC_WARN_UNDECLARED_SELECTOR = YES;
+				GCC_WARN_UNINITIALIZED_AUTOS = YES_AGGRESSIVE;
+				GCC_WARN_UNUSED_FUNCTION = YES;
+				GCC_WARN_UNUSED_VARIABLE = YES;
+				IPHONEOS_DEPLOYMENT_TARGET = 17.0;
+				LOCALIZATION_PREFERS_STRING_CATALOGS = YES;
+				MTL_ENABLE_DEBUG_INFO = NO;
+				MTL_FAST_MATH = YES;
+				SDKROOT = iphoneos;
+				SWIFT_COMPILATION_MODE = wholemodule;
+				VALIDATE_PRODUCT = YES;
+			};
+			name = Release;
+		};
+		EA6A04742BD1622100B10176 /* Debug */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = 296D5A9A50D2DB7BF2195F9F /* Pods-TourApp.debug.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TourApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AS7TGQLM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TourApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vijay.tourapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Debug;
+		};
+		EA6A04752BD1622100B10176 /* Release */ = {
+			isa = XCBuildConfiguration;
+			baseConfigurationReference = DC38A7DF54BE17463B27143C /* Pods-TourApp.release.xcconfig */;
+			buildSettings = {
+				ASSETCATALOG_COMPILER_APPICON_NAME = AppIcon;
+				ASSETCATALOG_COMPILER_GLOBAL_ACCENT_COLOR_NAME = AccentColor;
+				CODE_SIGN_IDENTITY = "Apple Development";
+				CODE_SIGN_STYLE = Automatic;
+				CURRENT_PROJECT_VERSION = 1;
+				DEVELOPMENT_ASSET_PATHS = "\"TourApp/Preview Content\"";
+				DEVELOPMENT_TEAM = 9AS7TGQLM2;
+				ENABLE_PREVIEWS = YES;
+				GENERATE_INFOPLIST_FILE = YES;
+				INFOPLIST_FILE = TourApp/Info.plist;
+				INFOPLIST_KEY_UIApplicationSceneManifest_Generation = YES;
+				INFOPLIST_KEY_UIApplicationSupportsIndirectInputEvents = YES;
+				INFOPLIST_KEY_UILaunchScreen_Generation = YES;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations = UIInterfaceOrientationPortrait;
+				INFOPLIST_KEY_UISupportedInterfaceOrientations_iPad = "UIInterfaceOrientationLandscapeLeft UIInterfaceOrientationLandscapeRight UIInterfaceOrientationPortrait UIInterfaceOrientationPortraitUpsideDown";
+				LD_RUNPATH_SEARCH_PATHS = (
+					"$(inherited)",
+					"@executable_path/Frameworks",
+				);
+				MARKETING_VERSION = 1.0;
+				PRODUCT_BUNDLE_IDENTIFIER = com.vijay.tourapp;
+				PRODUCT_NAME = "$(TARGET_NAME)";
+				PROVISIONING_PROFILE_SPECIFIER = "";
+				SWIFT_EMIT_LOC_STRINGS = YES;
+				SWIFT_VERSION = 5.0;
+				TARGETED_DEVICE_FAMILY = "1,2";
+			};
+			name = Release;
+		};
+/* End XCBuildConfiguration section */
+
+/* Begin XCConfigurationList section */
+		EA6A04602BD1621F00B10176 /* Build configuration list for PBXProject "TourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6A04712BD1622100B10176 /* Debug */,
+				EA6A04722BD1622100B10176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+		EA6A04732BD1622100B10176 /* Build configuration list for PBXNativeTarget "TourApp" */ = {
+			isa = XCConfigurationList;
+			buildConfigurations = (
+				EA6A04742BD1622100B10176 /* Debug */,
+				EA6A04752BD1622100B10176 /* Release */,
+			);
+			defaultConfigurationIsVisible = 0;
+			defaultConfigurationName = Release;
+		};
+/* End XCConfigurationList section */
+	};
+	rootObject = EA6A045D2BD1621F00B10176 /* Project object */;
+}

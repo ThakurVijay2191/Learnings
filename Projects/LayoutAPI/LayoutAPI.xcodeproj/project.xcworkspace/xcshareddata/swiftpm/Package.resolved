@@ -1,0 +1,14 @@
+{
+  "pins" : [
+    {
+      "identity" : "mylibrary",
+      "kind" : "remoteSourceControl",
+      "location" : "https://github.com/ThakurVijay2191/MyLibrary",
+      "state" : {
+        "branch" : "main",
+        "revision" : "0f9b3a05e88a4b111fe56a46f703471a3be961b8"
+      }
+    }
+  ],
+  "version" : 2
+}
