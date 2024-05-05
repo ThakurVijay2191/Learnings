@@ -1,0 +1,6 @@
+framework module VTFrameworks {
+  umbrella header "VTFrameworks-umbrella.h"
+
+  export *
+  module * { export * }
+}

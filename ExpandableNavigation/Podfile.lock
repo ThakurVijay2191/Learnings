@@ -1,0 +1,16 @@
+PODS:
+  - VTFrameworks (1.0.1)
+
+DEPENDENCIES:
+  - VTFrameworks
+
+SPEC REPOS:
+  trunk:
+    - VTFrameworks
+
+SPEC CHECKSUMS:
+  VTFrameworks: cc6df9901e1727e9ae83457dab471ead1d422b0c
+
+PODFILE CHECKSUM: 74462f7758e7039936259ec42e57cb903abffb55
+
+COCOAPODS: 1.15.2

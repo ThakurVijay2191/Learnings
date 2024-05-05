@@ -1,0 +1,6 @@
+framework module Pods_DarkModeAnimation {
+  umbrella header "Pods-DarkModeAnimation-umbrella.h"
+
+  export *
+  module * { export * }
+}
